@@ -17,7 +17,7 @@ Esta es una API REST construida con **FastAPI** y **LangChain** que implementa u
 
 1. Clonar el repositorio:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/JuanDiegoMontero/itstk-rag-api.git
    cd itstk_rag_api
    ```
 
