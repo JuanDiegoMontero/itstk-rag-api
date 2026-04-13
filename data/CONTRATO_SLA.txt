@@ -1,0 +1,7 @@
+ACUERDO DE NIVEL DE SERVICIO - ITSTK S.A.S.
+El tiempo de respuesta para incidencias críticas es de 2 horas.
+El horario de soporte es de 8:00 a 18:00 hora de Colombia.
+Las sanciones aplican por incumplimiento del 99.5% de disponibilidad.
+Los ingenieros de IA pueden escalar a arquitectos de solución después de 3 intentos fallidos.
+Los incidentes no críticos tienen tiempo de respuesta de 24 horas hábiles.
+La penalización por cada hora de downtime no planificado es del 5% sobre la factura mensual.
