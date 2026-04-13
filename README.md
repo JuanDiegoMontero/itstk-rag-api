@@ -55,6 +55,6 @@ La documentación interactiva (Swagger) estará disponible en: http://localhost:
 ## Pruebas Unitarias
 
 El proyecto cuenta con pruebas de integración y validación (Happy path, Out-of-context, Validation Error). Para ejecutarlas:
-    ```bash
+    ```
    pytest -v
     ```
