@@ -2,6 +2,33 @@
 
 Esta es una API REST construida con **FastAPI** y **LangChain** que implementa un sistema RAG (Retrieval-Augmented Generation) 100% local. Utiliza **Ollama** (Mistral) como LLM y **ChromaDB** como base de datos vectorial.
 
+---
+
+## 📦 Dependencias
+El proyecto está construido sobre Python 3.10+. Todas las dependencias están centralizadas en el archivo `requirements.txt`. Las tecnologías principales utilizadas son:
+
+* **FastAPI & Uvicorn:** Framework web asíncrono y servidor ASGI.
+* **LangChain (Core / Community):** Orquestación del flujo RAG utilizando arquitectura moderna LCEL.
+* **ChromaDB:** Base de datos vectorial persistente en disco local.
+* **Ollama (Mistral):** Inferencia del Modelo de Lenguaje Grande de forma 100% local.
+* **HuggingFace Embeddings:** Generación de vectores usando el modelo ligero `all-MiniLM-L6-v2`.
+
+---
+
+## ⚙️ Variables de Entorno (.ENV)
+Para cumplir estrictamente con los entregables solicitados en las instrucciones de esta prueba, el archivo `.env` con las variables de entorno ha sido incluido directamente en este repositorio. 
+
+*(Nota del desarrollador: Soy consciente de que en un entorno real de producción o trabajo en equipo, los archivos .env jamás se suben al control de versiones por seguridad. Lo incluyo aquí explícitamente para facilitar su proceso de evaluación).*
+
+Las variables configuradas para correr el proyecto localmente son:
+```env
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=mistral
+CHROMA_DB_DIR=./data/chroma_db
+DOCUMENT_PATH=./data/CONTRATO_SLA.txt
+```
+
+
 ## Arquitectura y Decisiones de Diseño
 * **LCEL (LangChain Expression Language):** Se implementó la cadena lógica usando LCEL para un flujo declarativo y nativamente asíncrono, descartando cadenas legacy (`RetrievalQA`).
 * **Concurrencia Asíncrona:** Los endpoints consumen el LLM y el retriever mediante `await` para no bloquear el Event Loop de FastAPI.
@@ -32,9 +59,6 @@ Esta es una API REST construida con **FastAPI** y **LangChain** que implementa u
     pip install -r requirements.txt
    ```
 
-4. Configurar las variables de entorno:
-    Renombra el archivo .env.example a .env y verifica que los puertos coincidan con tu instalación local de Ollama.
-
 ## Ejecución del Proyecto
 
 1. Ingesta de Datos (Crear Base Vectorial)
@@ -42,8 +66,6 @@ Esta es una API REST construida con **FastAPI** y **LangChain** que implementa u
    ```bash
    python -m scripts.load_documents
    ```
-
-
 2. Levantar la API
 
    ```bash
