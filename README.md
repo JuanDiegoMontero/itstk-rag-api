@@ -18,7 +18,7 @@ El proyecto está construido sobre Python 3.10+. Todas las dependencias están c
 ## ⚙️ Variables de Entorno (.ENV)
 Para cumplir estrictamente con los entregables solicitados en las instrucciones de esta prueba, el archivo `.env` con las variables de entorno ha sido incluido directamente en este repositorio. 
 
-*(Nota del desarrollador: Soy consciente de que en un entorno real de producción o trabajo en equipo, los archivos .env jamás se suben al control de versiones por seguridad. Lo incluyo aquí explícitamente para facilitar su proceso de evaluación).*
+*(Nota: Soy consciente de que en un entorno real de producción o trabajo en equipo, los archivos .env jamás se suben al control de versiones por seguridad. Lo incluyo aquí explícitamente para facilitar su proceso de evaluación).*
 
 Las variables configuradas para correr el proyecto localmente son:
 ```env
